@@ -22,6 +22,10 @@ details > summary {
     list-style: none;
 }
 
+ul {
+    margin-bottom: 0.5rem;
+}
+
 .page {
     width: 21cm;
     height: 29.7cm;
