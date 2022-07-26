@@ -9,40 +9,66 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/resume.css">
   </head>
-  <body>
+  <body class="container">
     <header>
-      <h1>
-        VINCENT HERR
-      </h1>
-      <h2>
-        <p><i class="fa-solid fa-envelope"></i> vherr2@illinois.edu </p>
-        <p><i class="fa-solid fa-location-dot"></i> 1751 18TH AVE. S, SEATTLE, WA 98144</p>
-        <p><i class="fa-solid fa-phone"></i> (630)815-3841 </p>
-      </h2>
+      <div class="row">
+        <h1>
+          VINCENT HERR
+        </h1>
+      </div>
+      <div class="row">
+        <div class="col">
+          <span><i class="fa-solid fa-envelope"></i> vherr2@illinois.edu</span>
+          <span><i class="fa-solid fa-location-dot"></i> 1751 18TH AVE. S, SEATTLE, WA 98144</span>
+          <span><i class="fa-solid fa-phone"></i> (630)815-3841</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <span><i class="fa-brands fa-github"></i> https://github.com/vherr2</span>
+          <span><i class="fa-brands fa-linkedin"></i> https://www.linkedin.com/in/vincent-herr/</span>
+        </div>
+      </div>
     </header>
     <main>
-      <section>
-        <h2>Education</h2>
-      </section>
       <section>
         <h2>Experience</h2>
         <details open>
           <summary>
-            Instrumentl                                                      San Francisco, California
-            Full Stack Developer                                                     Oct 2021 – July 2022
+            <div class="row">
+              <div class="col text-right">Instrumentl</div>
+              <div class="col">San Francisco, California</div>
+            </div>
+            <div class="row">
+              <div class="col">Full Stack Developer</div>
+              <div class="col"><time>Oct 2021 – July 2022</time></div>
+            </div>
           </summary>
-          TODO
+          <ul>
+            <li>TODO</li>
+          </ul>
         </details>
         <details open>
           <summary>
-            Albert                                                      Chicago, Illinois
-            VP of Engineering                                                     Nov 2020 – Oct 2021
+            <div class="row">
+              <div class="col">Albert</div>
+              <div class="col">Chicago, Illinois</div>
+            </div>
+            <div class="row">
+              <div class="col">VP of Engineering</div>
+              <div class="col"><time>Nov 2020 – Oct 2021</time></div>
+            </div>
           </summary>
-          TODO
+          <ul>
+            <li>TODO</li>
+          </ul>
         </details>
         <details open>
           <summary>
-            Back End Lead                                                     July 2019 – Nov 2020
+            <div class="row">
+              <div class="col">Back End Lead</div>
+              <div class="col"><time>July 2019 – Nov 2020</time></div>
+            </div>
           </summary>
           <ul>
             <li>Mentored developers on code best practices, internal framework features, and performant SQL</li>
@@ -54,7 +80,10 @@
         </details>
         <details open>
           <summary>
-            Back End Developer                                                 Aug 2017 – July 2019
+            <div class="row">
+              <div class="col">Back End Developer</div>
+              <div class="col"><time>Aug 2017 – July 2019</time></div>
+            </div>
           </summary>
           <ul>
             <li>Migrated core internal resource endpoints from Javascript API to Elixir and legacy database from and RethinkDB to Postgres</li>
@@ -66,7 +95,10 @@
         </details>
         <details open>
           <summary>
-            Front End Developer                                                 Feb 2017 – Aug 2017
+            <div class="row">
+              <div class="col">Front End Developer</div>
+              <div class="col"><time>Feb 2017 – Aug 2017</time></div>
+            </div>
           </summary>
           <ul>
             <li>Collaborated with cross functional teams to deliver end user features, including internal facing content authoring tools</li>
@@ -76,8 +108,14 @@
         </details>
         <details open>
           <summary>
-            Capital One                                                  Chicago, Illinois
-            Full Stack Developer                                                    Apr 2016 – Feb 2017
+            <div class="row">
+              <div class="col">Capital One</div>
+              <div class="col"><time>Chicago, Illinois</time></div>
+            </div>
+            <div class="row">
+              <div class="col">Full Stack Developer</div>
+              <div class="col"><time>Apr 2016 – Feb 2017</time></div>
+            </div>
           </summary>
           <ul>
             <li>Collaborated on building integrations for updating user account information such as mailing address</li>
@@ -86,8 +124,14 @@
         </details>
         <details open>
           <summary>
-            Basic Ballot                                                        Berkeley, California
-            Cofounder, Technical Lead                                                                   Mar 2015 – Sept 2015
+            <div class="row">
+              <div class="col">Basic Ballot</div>
+              <div class="col"><time>Berkeley, California</time></div>
+            </div>
+            <div class="row">
+              <div class="col">Cofounder, Technical Lead</div>
+              <div class="col"><time>Mar 2015 – Sept 2015</time></div>
+            </div>
           </summary>
           <ul>
             <li>Collaborated with six other students of various backgrounds to explore opportunities in political voting recommendations</li>
@@ -97,8 +141,14 @@
         </details>
         <details open>
           <summary>
-            Wolverine Trading, LLC                                                                                                                                       Chicago, Illinois
-            Costs Structure Overhaul – Database Administrator Intern                                                                                        June 2014 – Aug 2014
+            <div class="row">
+              <div class="col">Wolverine Trading, LLC</div>
+              <div class="col"><time>Chicago, Illinois</time></div>
+            </div>
+            <div class="row">
+              <div class="col">Costs Structure Overhaul – Database Administrator Intern</div>
+              <div class="col"><time>June 2014 – Aug 2014</time></div>
+            </div>
           </summary>
           <ul>
             <li>Worked with quantitative analysts, software developers, and database administrators to restructure internal management of data and create stored procedures to automate database CRUD operations</li>
@@ -108,8 +158,14 @@
         </details>
         <details open>
           <summary>
-            State Farm                                                                                                                                                                       Champaign, Illinois
-            Systems/IT Intern                                                                      Aug 2012 – Dec 2012, May 2013 – Aug 2013
+            <div class="row">
+              <div class="col">State Farm</div>
+              <div class="col"><time>Champaign, Illinois</time></div>
+            </div>
+            <div class="row">
+              <div class="col">Systems/IT Intern</div>
+              <div class="col"><time>Aug 2012 – Dec 2012, May 2013 – Aug 2013</time></div>
+            </div>
           </summary>
           <ul>
             <li>Worked on teams of four to six other students and a technical lead </li>
@@ -119,13 +175,19 @@
         </details>
       </section>
       <section>
-        <h1>Skills</h1>
-        <p>Programming Languages: Elixir, SQL,  Javascript, Ruby, Python, HTML,  CSS, Java,C, C++</p>
+        <h2>Skills</h2>
+        <p>Programming Languages: Elixir, SQL, Javascript, Ruby, Python, HTML, CSS, Java,C, C++</p>
         <p>Frameworks: Phoenix, React, Rails, Ember, Angular, Flask, Django</p>
         <p>Platforms: Google Cloud Platform, Heroku, Amazon Web Services</p>
         <p>Tools and Libraries: Ecto, Git, Pandas, SVN</p>
       </section>
     </main>
+    <section>
+      <h2>Education</h2>
+      University of Illinois at Urbana-Champaign                                                               901 West Illinois Street, Urbana, IL 61801
+      Bachelor of Science in Computer Engineering                                                                                   Graduation Date: May 2015
+      GPA: 3.31
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
