@@ -17,8 +17,9 @@ html {
 }
 
 /* Hide section dropdown */
-summary {
-    display: block;
+details > summary {
+    cursor: default;
+    list-style: none;
 }
 
 .page {
@@ -26,6 +27,21 @@ summary {
     height: 29.7cm;
 }
 
+.bg-teal {
+    background-color: #e6ebeb
+}
+
+h1 {
+    color: teal;
+}
+
 section h2 {
+    color: teal;
+    background-color: #e6ebeb;
     border-bottom: 2px solid black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
