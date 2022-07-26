@@ -1,3 +1,8 @@
+:root {
+    --letter-width: 8.5in;
+    --letter-height: 11in;
+}
+
 /* Hide section dropdown */
 details > summary {
     cursor: default;
@@ -17,6 +22,10 @@ h1 {
     color: teal;
 }
 
+.bg-teal {
+    background-color: #e6ebeb
+}
+
 section h2 {
     color: teal;
     background-color: #e6ebeb;
@@ -25,14 +34,16 @@ section h2 {
 }
 
 @media print {
-    /* @page {
-        size: A4;
-        margin: 0;
-    } */
+    @page {
+        size: letter portrait;
+    }
 
     html, body {
-        width: 210mm;
-        height: 297mm;
+        -webkit-print-color-adjust: exact !important; /* Chrome */
+        color-adjust: exact;  /* Firefox */
+
+        width: var(--letter-width);
+        height: var(--letter-height);
         margin: 0;
         font-size: 90%;
     }
@@ -50,20 +61,8 @@ section h2 {
     }
 
     .page {
-        width: 21cm;
-        height: 29.7cm;
+        width: var(--letter-width);
+        height: var(--letter-height);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-    }
-
-    .bg-teal {
-        background-color: #e6ebeb
-    }
-
-    h1 {
-        color: teal;
-    }
-
-    section h2 {
-        background-color: #e6ebeb;
     }
 }
