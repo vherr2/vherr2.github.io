@@ -1,38 +1,16 @@
-/* @page {
-    size: A4;
-    margin: 0;
-}
-
-@media print {
-    html, body {
-      width: 210mm;
-      height: 297mm;
-    }
-} */
-
-html {
-    --bs-bg-opacity: 1;
-    background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
-    font-size: 80%;
-}
-
 /* Hide section dropdown */
 details > summary {
     cursor: default;
     list-style: none;
 }
 
-ul {
-    margin-bottom: 0.5rem;
+p, ul {
+    margin-bottom: 0rem;
 }
 
-.page {
-    width: 21cm;
-    height: 29.7cm;
-}
-
-.bg-teal {
-    background-color: #e6ebeb
+a {
+    color: black;
+    text-decoration: none;
 }
 
 h1 {
@@ -43,9 +21,49 @@ section h2 {
     color: teal;
     background-color: #e6ebeb;
     border-bottom: 2px solid black;
+    margin-top: 1rem;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+@media print {
+    /* @page {
+        size: A4;
+        margin: 0;
+    } */
+
+    html, body {
+        width: 210mm;
+        height: 297mm;
+        margin: 0;
+        font-size: 90%;
+    }
+}
+
+@media screen {
+    html {
+        --bs-bg-opacity: 1;
+        background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important;
+        font-size: 80%;
+    }
+
+    main {
+        margin-top: 3rem;
+    }
+
+    .page {
+        width: 21cm;
+        height: 29.7cm;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+
+    .bg-teal {
+        background-color: #e6ebeb
+    }
+
+    h1 {
+        color: teal;
+    }
+
+    section h2 {
+        background-color: #e6ebeb;
+    }
 }
