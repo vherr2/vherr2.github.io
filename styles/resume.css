@@ -9,7 +9,11 @@ details > summary {
     list-style: none;
 }
 
-p, ul {
+ul {
+    margin-bottom: 0.8rem;
+}
+
+p {
     margin-bottom: 0rem;
 }
 
